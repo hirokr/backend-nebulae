@@ -1,3 +1,4 @@
+import Temparature from "@/components/temparature";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,6 +7,7 @@ export default async function Home() {
   const data = await response.json();
   return (
     <main className='w-full h-full p-10 flex justify-center items-center flex-col'>
+      <Temparature/>
       <div className="justify-center flex items-center flex-col text-xl text-white mb-10 ">
         <h1 className="text-4xl font-semibold">GitHub User List API test</h1>
         <p className="text-3xl">List and Object used</p>
